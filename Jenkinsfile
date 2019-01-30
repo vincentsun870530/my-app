@@ -12,6 +12,12 @@ node{
    stage('Build'){
      echo "Hello World!!!!"
    }
+  stage('Email Notification'){
+      mail bcc: '', body: '''Hi Welcome to jenkins email alerts
+      Thanks
+      Hari''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'hari.kammana@gmail.com'
+   }
+
 }
 
 
